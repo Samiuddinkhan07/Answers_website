@@ -1,0 +1,178 @@
+/*  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --border-f1:#f1f1f1;
+    --border-c2:#c2c2c2;
+    --border-f7:#f7f7f7;
+    --border-black:#000;
+    --hero-color:#fff;
+    --purple-shade:#A084E8;
+    --pink-shade:#E893CF;
+    --blue-shade:#CAEDFF;
+    --yellow-shade:#FDFFAE;
+    --green-shade:#D0F5BE;
+    --blue-shade2:#B0DAFF;
+        --text: #281d06;
+    --background: #fcf8ed;
+    --primary: #1b4fc0;
+    --secondary: #f7e7c5;
+    --accent: #1e57d2;
+}
+
+body{
+    background-color: var(--background) !important;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* navbar css*/
+
+.nav-header{
+    border-bottom: 2px solid var(--border-black);
+    
+}
+/* navbar css ends*/
+
+/* hero section css*/
+.hero-section-main{
+    background:url(/Assets/Images/Image1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+.hero-wrapper .hero-content{
+    height: 500px;
+    color:var(--hero-color);
+}
+/* hero section css ends*/
+
+/* about us css*/
+.abouts-us-content  .about-us-image img{
+    width: 100%;
+    border-radius: 10px;
+    border:1px solid var(--border-c2)
+}
+/* about us css end*/
+
+
+/* TRAC css*/
+.trac-section .container .card:hover{
+    transform: translateY(-2%);
+}
+.trac-section .container .card{
+   transition: transform 0.3s ease-in-out;
+}
+.trac-leftCards{
+    position: relative;
+}
+
+
+.trac-rightCard{
+    position: relative;
+}
+
+.trac-cardBody h6::first-letter{
+    font-size:200%
+}
+
+.trac-cardBody{
+    box-shadow: 4px 3px #000;
+}
+
+.trac-training{
+    background-color: var(--purple-shade);
+}
+
+.trac-research{
+    background-color: var(--pink-shade);
+}
+
+.trac-advocacy{
+    background-color: var(--blue-shade);
+}
+
+.trac-community{
+    background-color: var(--yellow-shade);
+}
+.trac-situation{
+    background-color:var(--green-shade)
+}
+/* TRAC css ends*/
+
+/* Vision css */  
+.vision-content p{
+    background-color: var(--blue-shade2);
+}
+
+.vision-section .container{
+    background-color: var(--secondary);
+    border-radius: 5px;
+}
+/* .vision-section .container  .card{
+    background-color: var(--yellow-shade);
+    
+} */
+
+
+/* Vision css ends*/  
+
+/* changed made in bootstrap css */
+.nav-link{
+    color: var(--text) !important;
+}
+
+.nav-link::after{
+    display: block;
+    content:" ";
+    width: 0px;
+    height:2px;
+    background-color:var(--accent);
+    transition: width 0.3s ease-in-out
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+.nav-item{
+    cursor: pointer;
+}
+.publication-container{
+    width: 100%;
+    height: 100%;
+}
+
+.publication-container .publication-inner h1{
+    margin:20px 0px
+}
+
+.publication-inner ul{
+    list-style: decimal;
+    
+}
+
+.publication-inner ul li a{
+   color: var(--text);
+   text-decoration: none;
+}
+
+.publication-inner ul li a:hover{
+    text-decoration: underline;
+ }
+
+
+
+/* media queries here */
+@media screen and (max-width:768px) {
+    .answers-text{
+        display:none;
+    }
+}
