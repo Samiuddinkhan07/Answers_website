@@ -155,18 +155,18 @@ body{
 }
 
 .publication-inner ul{
-    list-style: decimal;
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(2,53%);
+    grid-gap:10px;
     
 }
 
-.publication-inner ul li a{
-   color: var(--text);
-   text-decoration: none;
+.publication-inner ul li img{
+    width: 15%;
 }
 
-.publication-inner ul li a:hover{
-    text-decoration: underline;
- }
+
 
 
 
