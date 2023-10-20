@@ -13,7 +13,7 @@
 <body>
     <div class="body-wrapper">
         <div class="nav-header">
-            <nav class="navbar navbar-expand-xl bg-white answers-navbar">
+            <nav class="navbar navbar-expand-xl answers-navbar">
                 <div class="container-fluid">
                  <div class="answers-logo d-flex align-items-center">
                     <img src="/Assets/Images/answers_Logo.png" class="me-4" alt="" width="85px">
@@ -42,21 +42,24 @@
               </nav>
         </div>
         <div class="page-container container-fluid p-0">
-            <div class="publication-container" id="publication-page"></div>
+            <div class="publication-container" id="publication-page" style="display: none;"></div>
             <div class="home-page" id="home-page-content">
                 <!-- hero section -->
                 <div class="hero-section-main">
-                    <div class="hero-wrapper container">
+                    <div class="hero-bg-div"></div>
+                    <div class="hero-wrapper container pt-4">
                         <div class="row align-items-end hero-content">
-                            <div class="col-md-8 col-lg-8">
+                            <div class="col-md-8 col-lg-6">
                                 <h1>Our Vision and Mission</h1>
                                 <p>ANSWERS is a non-profit professional organization established in 1994 in Hyderabad, as a technical resource centre in nursing, midwifery, women’s health, public health and gender equity in health. Our Mission is quality an equity in health care. </p>
-                                <div class="btn btn-success">
+                                <div class="btn btn-primary">
                                     Know more
                                 </div>
                             </div>
-                            <div class="col-3">
-                
+                            <div class="col-md-3 col-lg-6">
+                                <div class="hero-img-container">
+                                    <img src="/Assets/Images/undraw_blogging_re_kl0d.svg" alt="" class="svg-img-hero">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -71,12 +74,15 @@
                                 <img src="/Assets/Images/DR.prakash.jpg" alt="">
                             </div>
                             <div class="col-md-9 col-sm-12">
-                                <p>
+                                <p class="about-us-text">
                                     <b>MyTRI</b> Institute is the physical facility of ANSWERS, and headquarters of its operations. The Organization realized the need for heaving its own facility when a large number of training programmes requiring teaching, learning and residential facilities were being planned on a regular basis. Renting was becoming expensive and inconvenient, and was affecting the quality of work due to stress of last minute refusal and restrictions about hours of utilization. The decision to develop prototype labs for teaching and communication, for skill learning related to childbirth, made the issue of heaving own premises even more urgent.
-                                    Procuring such a facility with the meager corpus fund of the Organization was doubtful. Dr. M. Prakasamma’s donation of one acre of land from her farm at Peddapur village made it possible for ANSWERS to plan for self sufficiency in physical facilities. The buildings were conceived in 2005 and constructed during 2006-07 after permissions related to land conversion and building plans were obtained.
-                                    MyTRI Institute is strategically located on the busy NH9 between Hyderabad (60 Kms) in Telangana and Bidar in Karnataka (70 Kms). Two major towns are located on either side within ten km distance – Sangaredy and Sadashivpet of Medak district – making access to health and emergency services within minutes.
-                                    MyTRI Institute makes ANSWERS self reliant with academic, administrative and teaching related activities organized in one place within an environment – friendly and spacious atmosphere. Faculty live on the campus. Round the clock power and water availability, and access to internet make residential programmes effective.
-                                    While all its programmes, administration and training activities are conducted at MyTRI Institute, the Organization retains its registered office at Hyderabad for liaison, communication and networking.
+                                    Procuring such a facility with the meager corpus fund of the Organization was doubtful. Dr. M. Prakasamma’s donation of one acre of land from her farm at Peddapur village made it possible for ANSWERS to plan for self sufficiency in physical facilities. The buildings were conceived in 2005 and constructed during 2006-07 after permissions related to land conversion and building plans were obtained...
+                                    <span id="hidden-text" style="display: none;">
+                                        MyTRI Institute is strategically located on the busy NH9 between Hyderabad (60 Kms) in Telangana and Bidar in Karnataka (70 Kms). Two major towns are located on either side within ten km distance – Sangaredy and Sadashivpet of Medak district – making access to health and emergency services within minutes.
+                                        MyTRI Institute makes ANSWERS self reliant with academic, administrative and teaching related activities organized in one place within an environment – friendly and spacious atmosphere. Faculty live on the campus. Round the clock power and water availability, and access to internet make residential programmes effective.
+                                        While all its programmes, administration and training activities are conducted at MyTRI Institute, the Organization retains its registered office at Hyderabad for liaison, communication and networking.
+                                    </span>
+                                    <span id="toggle-text" class="fw-bolder" style="cursor: pointer;">Read More</span>
                                 </p>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
    
     function getPublicationPage(){
         $("#home-page-content").hide();
+        $("#publication-page").show();
         $.ajax({
             url:"templates/publications.htm",
             success:function(response){
@@ -27,3 +28,15 @@
         }
     }
 
+
+    //function to toggle text in about us section
+
+    $("#toggle-text").click(function(){
+        $("#hidden-text").toggle(function(){
+            if($("#hidden-text").is(':visible')){
+               $("#toggle-text").text("Read Less")
+            }else{
+                $("#toggle-text").text("Read More")
+            }
+        });
+    })

@@ -1,5 +1,4 @@
 /*  */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root{
@@ -19,39 +18,65 @@
     --primary: #1b4fc0;
     --secondary: #f7e7c5;
     --accent: #1e57d2;
+    --text-black:#000;
+    --background-clr:#3180F5;
+    --light-bg:#D7F5F5;
 }
 
 body{
-    background-color: var(--background) !important;
+    
 }
 
 *{
     font-family: 'Poppins', sans-serif;
 }
 
-
+.body-wrapper{
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
 
 /* navbar css*/
 
 .nav-header{
-    border-bottom: 2px solid var(--border-black);
+    background-color: transparent;
     
 }
 /* navbar css ends*/
 
 /* hero section css*/
+
+
+
+.svg-img-hero{
+    width: 100%;
+}
+
+.hero-content p{
+    white-space: break-spaces;
+}
+
 .hero-section-main{
-    background:url(/Assets/Images/Image1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    background-attachment: fixed;
-    height: 600px;
+    position:relative;
+}
+
+.hero-section-main .hero-wrapper {
+    min-height: 600px;
+    max-height: 100%;
+}
+
+.hero-bg-div{
+    position: absolute;
+    top: -60px;
+    background-color: #f0f5ff;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 .hero-wrapper .hero-content{
-    height: 500px;
-    color:var(--hero-color);
+    height: 400px;
+    color:var(--text-black);
 }
 /* hero section css ends*/
 
